@@ -39,7 +39,7 @@ int main(){
     FILE *arqInsertion = fopen("resultados/insertion.txt", "w");
     double tempo_insertion;
 
-    for (int n=10 ; n<1000 ; n=n+10){
+    for (int n=10 ; n<5000 ; n=n+10){
       tempo_bolha = tempo_caixas = tempo_insertion = tempo_insertion = 0;
       int *vetor= (int*)malloc(sizeof(int)*n);
       gera_sequencias(n);
@@ -67,7 +67,7 @@ int main(){
         Tempo_CPU_Sistema(&s_CPU_inicial, &s_total_inicial);
         insertion(vetor, n);
         Tempo_CPU_Sistema(&s_CPU_final, &s_total_final);
-        tempo_merge += s_CPU_final - s_CPU_inicial;
+        tempo_insertion += s_CPU_final - s_CPU_inicial;
 
       }
       escreve_resultado(arqBolha,n,tempo_bolha);
