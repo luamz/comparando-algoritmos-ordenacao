@@ -8,10 +8,12 @@ void gera_sequencias(int n){
     char nome[8];
     srand(time(NULL));
         for (int j = 0 ; j < 10 ; j++){
+          char path[20] = "sequencias/seq";
           FILE *arquivo;
           sprintf(nome, "%d", num);
           strcat(nome, ".txt");
-          arquivo = fopen(nome,"w");
+          strcat(path,nome);
+          arquivo = fopen(path,"w");
             for (int k=0 ; k<n ; k++){
                 fprintf(arquivo, "%d,", rand()%1000);
             }
