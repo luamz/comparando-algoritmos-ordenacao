@@ -8,13 +8,14 @@ void bolha(int A[], int n)
 	while (chave == 1){
 		chave = 0;
 		{
-			for 
-			if (A[i + 1] < A[i]){
-				temp = A[i];
-				A[i] = A[i + 1];
-				A[i + 1] = temp;
-				for (int i = 0; i < n - 1; i++)chave = 1;
-			}
+			for (int i = 0; i < n - 1; i++){
+				if (A[i + 1] < A[i]){
+					temp = A[i];
+					A[i] = A[i + 1];
+					A[i + 1] = temp;
+					chave = 1;
+				}	
+			}	
 		}
 	}
 }
