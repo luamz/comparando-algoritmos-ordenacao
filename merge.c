@@ -1,17 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 7
 
-void imprimeVetor(int A[], int n)
-{
-	for (int i = 0; i < n; i++)
-		printf("%d ", A[i]);
-	printf("\n");
-}
-
-
-
-void merge(int A[], int inicio, int meio, int fim)
+void mergea(int A[], int inicio, int meio, int fim)
 {
     int i, j, k;
     int n1 = meio - inicio + 1;
@@ -53,25 +43,13 @@ void merge(int A[], int inicio, int meio, int fim)
     }
 }
 
-void mergeSort(int A[], int inicio, int fim)
+void merge(int A[], int inicio, int fim)
 {
     if (inicio < fim) {
         int meio = inicio + (fim - inicio) / 2;
-        mergeSort(A, inicio, meio);
-        mergeSort(A, meio + 1, fim);
+        merge(A, inicio, meio);
+        merge(A, meio + 1, fim);
   
-        merge(A, inicio, meio, fim);
+        mergea(A, inicio, meio, fim);
     }
-}
-  
-  
-/* Driver code */
-int main()
-{
-    int A[] = { 12, 11, 13, 5, 6, 7 , 2};
-  
-    imprimeVetor(A, N);
-    mergeSort(A, 0, N - 1);
-    imprimeVetor(A, N);
-    return 0;
 }

@@ -1,13 +1,4 @@
 #include <stdio.h>
-#define N 7
-
-void imprimeVetor(int A[], int n)
-{
-	for (int i = 0; i < n; i++)
-		printf("%d ", A[i]);
-	printf("\n");
-}
-
 
 void insertion(int A[], int n){
   int i, j, temp;
@@ -22,14 +13,3 @@ void insertion(int A[], int n){
    }
 }
 
-
-int main() {
- 
-  int A[] = {64, 34, 25, 12, 22, 11, 90};
-
-  imprimeVetor(A, N);
-  insertion(A, N);
-  imprimeVetor(A,N);
-  
-  return 0;
-}

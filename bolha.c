@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define N 7
 
 void imprimeVetor(int A[], int n)
 {
@@ -25,15 +24,4 @@ void bolha(int A[], int n)
 			}	
 		}
 	}
-}
-
-
-
-int main()
-{
-	int A[] = {64, 34, 25, 12, 22, 11, 90};
-	imprimeVetor(A, N);
-	bolha(A, N);
-	imprimeVetor(A, N);
-	return 0;
 }
