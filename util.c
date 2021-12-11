@@ -76,3 +76,24 @@ void escreve_resultado(FILE *arquivo, int n, double tempo){
   fprintf(arquivo, "\n");
 
 }
+
+void imprimeVetor(int A[], int n)
+{
+	for (int i = 0; i < n; i++)
+		printf("%d ", A[i]);
+	printf("\n");
+}
+
+void progresso( char label[], int n, int total )
+{
+    
+    int tamanho = 70 - strlen( label );
+    int pos = ( n * tamanho ) / total ;    
+    int porcentagem = ( n * 100 ) / total;
+
+    printf( "\033[93m %s[", label );
+    for ( int i = 0; i < pos; i++ )
+      printf( "%c", '=' );
+    printf("] %d%%\n", porcentagem );
+
+}

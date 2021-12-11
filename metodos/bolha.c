@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-void imprimeVetor(int A[], int n)
-{
-	for (int i = 0; i < n; i++)
-		printf("%d ", A[i]);
-	printf("\n");
-}
-
 void bolha(int A[], int n)
 {
 	int chave = 1;
