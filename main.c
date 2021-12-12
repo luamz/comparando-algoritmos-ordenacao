@@ -21,8 +21,8 @@ int main(){
   FILE *arqInsertion = fopen("resultados/insertion.txt", "w");
   double tempo_insertion;
 
-  for (int n= 10; n<1000 ; n=n+10){
-        progresso("Executando... ",n,1000);
+  for (int n= 10; n<100000 ; n=n+10){
+        progresso("Executando... ",n,100000);
         tempo_bolha = 0;
         tempo_caixas = 0;
         tempo_merge = 0;
@@ -54,7 +54,6 @@ int main(){
         vetor = leSequencia(nSeq, n);
         Tempo_CPU_Sistema(&s_CPU_inicial, &s_total_inicial);
         insertion(vetor, n);
-
         Tempo_CPU_Sistema(&s_CPU_final, &s_total_final);
         tempo_insertion += s_CPU_final - s_CPU_inicial; 
 

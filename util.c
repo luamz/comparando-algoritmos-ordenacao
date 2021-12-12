@@ -36,7 +36,7 @@ void gera_sequencias(int n){
           strcat(path,nome);
           arquivo = fopen(path,"w");
             for (int k=0 ; k<n ; k++){
-                fprintf(arquivo, "%d,", rand()%1000);
+                fprintf(arquivo, "%d,", rand()%10000);
             }
           fprintf(arquivo, "\n");
           fclose(arquivo);
