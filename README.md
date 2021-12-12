@@ -1,3 +1,5 @@
+Análise e Projeto de Algoritmos - Luam Souza e Victoria Granja
+--
 Aplicação desenvolvida em C para cálculo e comparação dos tempos de processamento dos métodos de ordenação da Bolha, das Caixas, Insertion e Merge.
 
 Para executar configure no arquivo main.c o número máximo de N (números a serem ordenados), o passo com que esse número será incrementado e a semente com que os números aleatórios serão gerados.
