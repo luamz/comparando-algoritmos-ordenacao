@@ -53,17 +53,17 @@ int main()
   FILE *arqCaixas5 = fopen("resultados/comp_caixas/caixas5.txt", "w");
   double tempo_caixas5;
 
-  int passo = 100;
-  int max = 10000;
+  int passo = 1000;
+  int max = 100000;
 
   executa_caixas(arqCaixas1,tempo_caixas1,s_CPU_inicial,
-  s_CPU_final,s_total_inicial,s_total_final,max,passo,100);
-
-  executa_caixas(arqCaixas2,tempo_caixas2,s_CPU_inicial,
   s_CPU_final,s_total_inicial,s_total_final,max,passo,1000);
 
-  executa_caixas(arqCaixas3,tempo_caixas3,s_CPU_inicial,
+  executa_caixas(arqCaixas2,tempo_caixas2,s_CPU_inicial,
   s_CPU_final,s_total_inicial,s_total_final,max,passo,10000);
+
+  executa_caixas(arqCaixas3,tempo_caixas3,s_CPU_inicial,
+  s_CPU_final,s_total_inicial,s_total_final,max,passo,50000);
 
   executa_caixas(arqCaixas4,tempo_caixas4,s_CPU_inicial,
   s_CPU_final,s_total_inicial,s_total_final,max,passo,100000);
