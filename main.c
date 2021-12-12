@@ -63,14 +63,6 @@ int main()
       insertion(vetor, n);
       Tempo_CPU_Sistema(&s_CPU_final, &s_total_final);
       tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
-      tempo_insertion += s_CPU_final - s_CPU_inicial;
     }
 
     free(vetor);
