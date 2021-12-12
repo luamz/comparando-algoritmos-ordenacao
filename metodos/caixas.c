@@ -18,6 +18,7 @@ void caixas(int A[], int n)
     {
         caixas[i] = 0;
     }
+    
     for (int j = 0; j < n; j++)
     {
         caixas[A[j] - min]++; // Posição relativa número-min

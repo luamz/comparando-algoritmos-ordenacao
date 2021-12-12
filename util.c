@@ -24,7 +24,7 @@ void Tempo_CPU_Sistema(double *seg_CPU_total, double *seg_sistema_total)
 
 
 
-void gera_sequencias(int n){
+void gera_sequencias(int n, int semente){
     int num = 1;
     char nome[8];
     srand(time(NULL));
@@ -36,7 +36,7 @@ void gera_sequencias(int n){
           strcat(path,nome);
           arquivo = fopen(path,"w");
             for (int k=0 ; k<n ; k++){
-                fprintf(arquivo, "%d,", rand()%10000);
+                fprintf(arquivo, "%d,", rand()%semente);
             }
           fprintf(arquivo, "\n");
           fclose(arquivo);
