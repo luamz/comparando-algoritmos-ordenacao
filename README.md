@@ -8,4 +8,6 @@ Para a comparação do método das caixas de acordo com o tamanho de B, execute 
 
 Os arquivos .txt resultantes das execuções são armazenados na pasta resultados, as sequências são escritas na pasta sequências conforme o programa roda, os métodos de ordenação estão na pasta metodos e no arquivo util.c estão algumas funções auxiliares.
 
+Para as sequências aleatórias foi criada a função gera_sequencias, que utiliza a seed de um método que retorna o tempo passado e dividi-se ele com o resto de um valor especifícado. De maneira a conseguir gerar números aleatórios sem algum padrão.
+
 Para gerar os gráficos foi utilizada a linguagem R com a biblioteca readr, o arquivo Gráfico.R gera gráficos comparando todos os métodos, o arquivo GráficosIndividuais.R é usado para gráficos individuais dos métodos, e o GráficoCompCaixas.R para a comparação do método das caixas segundo b.
